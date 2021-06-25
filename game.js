@@ -88,6 +88,19 @@ function init(){
         console.log("Mouse Pressed"); 
         player.moving = true;
     });
+    document.addEventListener('keydown',function(e){
+        console.log(e.key); 
+        if(e.key == " "){
+            player.moving = true;
+        }
+    }) ;
+    document.addEventListener('keyup',function(e){
+        console.log(e.key); 
+        if(e.key == " "){
+            player.moving = false;
+        }
+    }) ;
+
     canvas.addEventListener('mouseup',function(){
         console.log("Mouse Released"); 
         player.moving = false;
