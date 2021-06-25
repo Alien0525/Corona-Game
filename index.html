@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Corona Game</title>
+        <style>
+            html, body {
+				height: 100%;
+			}
+
+			html {
+				display: table;
+				margin: auto;
+			}
+
+			body {
+				background-color : rgb(0, 0, 0);
+				display: table-cell;
+				vertical-align: middle;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+			}
+            canvas{
+                background-image: url("Assets/nature.jpg");
+                /* border:5px solid black; */
+                box-shadow: 10px 10px 20px #888888;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <h1>Corona Warrior</h1>
+        <canvas id="mycanvas"></canvas>
+        <br><br>
+        <h3>Reach the gem facing minimum collisions with the virus. Every collision with the virus, reduces your health. </h3><h4>Click on the game screen to move the player ahead. Release mouse click to stop. Good Luck !</h4>
+        <h6>Reload to reset</h6>
+        <script src="game.js"></script>
+    </body>
+
+
+</html>
